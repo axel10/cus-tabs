@@ -1,0 +1,1 @@
+export interface TabControllerOptions {  tabBarId?: string  tabContainerId?: string  initIndex?: number  onChange?: (i: number, d: any) => void  data:TabItem[]}export interface TabItem {  title: string  type?: string  data: any[]}
