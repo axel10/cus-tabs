@@ -18,4 +18,8 @@
     }
   }
 }
+
+  html,body{
+    margin: 0;
+  }
 </style>
