@@ -1,37 +1,21 @@
 <template>
   <CusTabWrap>
     <template v-slot:tabBar>
-      <CusTabBar :controller="tabController"></CusTabBar>
+      <CusTabBar :style="{'height':'50px'}" :controller="tabController"></CusTabBar>
     </template>
 
     <template v-slot:tabContainer>
-      <CusTabContainer :controller="tabController"></CusTabContainer>
+      <CusTabContainer>
+        <CusTabContainerItem v-for="item in tabItems">
+          <ul>
+            <li v-for="data in item.data">
+              {{data.title}}
+            </li>
+          </ul>
+        </CusTabContainerItem>
+      </CusTabContainer>
     </template>
   </CusTabWrap>
-  <!--  <div class="tab-wrap">
-      <div class="tab-bar" id="__tab-bar">
-        <div class="tab-bar-item" v-for="item in tabItems" :key="item.title">
-          {{item.title}}
-        </div>
-        <div class="indicator"></div>
-      </div>
-      <div class="tab-container" id="__tab-container">
-        <div class="tab-container-items-wrap">
-          <div class="tab-container-item" v-for="item in tabItems">
-            <div class="list" v-if="item.type==='list'">
-              <ul>
-                <li v-for="listItem in item.data">{{listItem.title}}</li>
-              </ul>
-            </div>
-            <div class="video" v-if="item.type==='block'">
-              <ul>
-                <li>video</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>-->
 </template>
 
 <script lang="ts">
@@ -43,19 +27,44 @@
     components: {},
   })
   export default class Home extends Vue {
-    public tabItems = [
+    public tabItems: any[] = [
       { 'title': '新闻', type: 'list', data: [{ img: '', title: 'list item title' }] },
       { 'title': '视频', type: 'block', data: [{ video: '', title: 'list item title' }] },
+      { 'title': '视频1', type: 'block', data: [{ video: '', title: 'list item title' }] },
+      { 'title': '视频2', type: 'block', data: [{ video: '', title: 'list item title' }] },
+      { 'title': '视频3', type: 'block', data: [{ video: '', title: 'list item title' }] },
+      { 'title': '视频4', type: 'block', data: [{ video: '', title: 'list item title' }] },
+      /*      { 'title': '视频1', type: 'block', data: [{ video: '', title: 'list item title' }] },
+            { 'title': '视频2', type: 'block', data: [{ video: '', title: 'list item title' }] },
+            { 'title': '视频3', type: 'block', data: [{ video: '', title: 'list item title' }] },
+            { 'title': '视频4', type: 'block', data: [{ video: '', title: 'list item title' }] },
+            { 'title': '视频5', type: 'block', data: [{ video: '', title: 'list item title' }] },
+            { 'title': '视频6', type: 'block', data: [{ video: '', title: 'list item title' }] },*/
     ];
 
     mounted() {
-      this.tabController = new TabController({ data: this.tabItems });
+      this.tabController = new TabController({ data: this.tabItems, tabScroll: true, initIndex: 1 });
+
+      setTimeout(() => {
+        // this.tabItems.push({
+        //   'title': `视频 ${Date.now()}`,
+        //   type: 'block', data: [{ video: '', title: 'list item title' }]
+        // });
+
+/*        this.tabController!.push({
+          'title': `视频 ${Date.now()}`,
+          type: 'block', data: [{ video: '', title: 'list item title' }]
+        });
+
+        this.tabItems[0].data.push({ img: '', title: '12312312' });*/
+
+      }, 1000);
     }
 
-    data(){
+    data() {
       return {
-        tabController:null
-      }
+        tabController: null
+      };
     }
 
     tabController?: TabController;

@@ -1,0 +1,1 @@
+<template>  <div class="__cus-tab-container-item">    <slot></slot>  </div></template><script lang="ts">  import { Component, Vue } from 'vue-property-decorator';  @Component({    name: 'CusTabContainerItem'  })  export default class CusTabContainerItem extends Vue {  }</script><style module lang="less">  @import "style.less";</style>
