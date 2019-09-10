@@ -1,1 +1,0 @@
-<template>  <div class="__cus-tab-bar-item">    <slot></slot>  </div></template><script lang="ts">  import { Component, Vue } from 'vue-property-decorator';  @Component({    name: 'CusTabItem',  })  export default class CusTabItem extends Vue {  }</script><style lang="less" scoped>  @import "./style";</style>

@@ -1,0 +1,1 @@
+import Vue, { CreateElement, VNode } from 'vue';const CusTabContainerItem = Vue.extend({  render(h: CreateElement): VNode {    return <div class='__cus-tab-container-item'>      <div class='__cus-tab-container-item-content-wrap'>        {this.$slots.default}      </div>    </div>;  },});export default CusTabContainerItem;

@@ -4,7 +4,7 @@ import router from './router';
 import store from './store';
 import CusTabs from '@/components/cus-tabs';
 
-import './components/cus-tabs/style.less'
+import './components/cus-tabs/style.less';
 
 Vue.config.productionTip = false;
 Vue.use(CusTabs);

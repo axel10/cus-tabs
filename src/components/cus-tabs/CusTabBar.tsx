@@ -1,0 +1,1 @@
+import Vue, { CreateElement, VNode } from 'vue';const CusTabBar = Vue.extend({  render(h: CreateElement): VNode {    return <div class='__cus-tab-bar' id='__cus-tab-bar'>      <div class='__cus-tabs-wrap'>        {this.$slots.default}      </div>      <div class='__cus-tab-indicator' id='__cus-indicator'></div>    </div>;  },});export default CusTabBar;
