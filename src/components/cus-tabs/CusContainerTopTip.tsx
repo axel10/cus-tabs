@@ -1,0 +1,1 @@
+import Vue, { VNode } from 'vue';const CusContainerTopTip = Vue.extend({  render(h: any): VNode {    return (      <div class='__cus-top-tip' data-cus-tab-tip=''>        <div class="__cus-top-tip-content" data-cus-tab-tip-content=''>          {this.$slots.default}        </div>      </div>    );  },});export default CusContainerTopTip;

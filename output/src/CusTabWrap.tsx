@@ -1,1 +1,1 @@
-import Vue, { CreateElement, VNode } from 'vue';const CusTabWrap = Vue.extend({  render(h:CreateElement): VNode {    return <div class='__cus-tabs' id='__cus-tabs'>      {this.$slots.tabBar}      {this.$slots.tabContainer}    </div>;  },});export default CusTabWrap
+import Vue, { CreateElement, VNode } from 'vue';const CusTabWrap = Vue.extend({  render(h: CreateElement): VNode {    return <div class='__cus-tabs' id='__cus-tabs'>      {this.$slots.tabBar}      {this.$slots.tabContainer}    </div>;  },});export default CusTabWrap;

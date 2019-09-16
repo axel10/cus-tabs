@@ -5,6 +5,7 @@ import MultiInstance from './views/MultiInstance/index.vue';
 import News from '@/views/News/index.vue';
 import Dynamic from '@/views/Dynamic/index.vue';
 import Custom from '@/views/Custom/index.vue';
+import Scroll from '@/views/Scroll/index.vue';
 
 Vue.use(Router);
 
@@ -24,6 +25,11 @@ export default new Router({
       path: '/dynamic',
       name: 'dynamic',
       component: Dynamic,
+    },
+    {
+      path: '/scroll',
+      name: 'scroll',
+      component: Scroll,
     },
     {
       // path: Custom

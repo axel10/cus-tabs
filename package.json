@@ -7,7 +7,8 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
-    "compile": "babel src/components/cus-tabs --extensions \".ts,.tsx\" --out-dir output/dist"
+    "compile": "babel src/components/cus-tabs --extensions \".ts,.tsx\"  --source-maps --out-dir output/es5",
+    "pack": "webpack"
   },
   "dependencies": {
     "vue": "^2.6.10"
@@ -33,11 +34,17 @@
     "node-sass": "^4.9.0",
     "sass-loader": "^7.1.0",
     "ts-jest": "^23.0.0",
-    "typescript": "^3.4.3",
+    "typescript": "^3.6.3",
     "vue-class-component": "^7.0.2",
     "vue-property-decorator": "^8.1.0",
     "vue-router": "^3.0.3",
     "vue-template-compiler": "^2.6.10",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8",
+    "ts-loader": "^6.1.0",
+    "css-loader": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "babel-loader": "^8.0.6"
   }
 }

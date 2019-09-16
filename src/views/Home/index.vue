@@ -12,6 +12,9 @@
         <router-link to="/dynamic">dynamic</router-link>
       </li>
       <li>
+        <router-link to="/scroll">scroll</router-link>
+      </li>
+      <li>
         <router-link to="/custom">custom</router-link>
       </li>
     </ul>
