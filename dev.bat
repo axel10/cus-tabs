@@ -1,1 +1,1 @@
-yarn serve
+call npm run serve

@@ -8,7 +8,8 @@
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
     "compile": "babel src/components/cus-tabs --extensions \".ts,.tsx\"  --source-maps --out-dir output/es5",
-    "pack": "webpack"
+    "pack": "webpack",
+    "export": "node ./scripts/export.js"
   },
   "dependencies": {
     "vue": "^2.6.10"
@@ -29,22 +30,22 @@
     "@vue/cli-service": "^3.10.0",
     "@vue/test-utils": "1.0.0-beta.29",
     "babel-core": "7.0.0-bridge.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.1.0",
     "ts-jest": "^23.0.0",
+    "ts-loader": "^6.1.0",
     "typescript": "^3.6.3",
     "vue-class-component": "^7.0.2",
     "vue-property-decorator": "^8.1.0",
     "vue-router": "^3.0.3",
     "vue-template-compiler": "^2.6.10",
     "vuex": "^3.0.1",
-    "webpack": "^4.40.2",
     "webpack-cli": "^3.3.8",
-    "ts-loader": "^6.1.0",
-    "css-loader": "^3.2.0",
-    "mini-css-extract-plugin": "^0.8.0",
-    "babel-loader": "^8.0.6"
+    "webpack": "4.20.2"
   }
 }

@@ -6,6 +6,7 @@ import News from '@/views/News/index.vue';
 import Dynamic from '@/views/Dynamic/index.vue';
 import Custom from '@/views/Custom/index.vue';
 import Scroll from '@/views/Scroll/index.vue';
+import CustomIndicatorAnimate from '@/views/CustomIndicatorAnimate/index.vue';
 
 Vue.use(Router);
 
@@ -37,6 +38,13 @@ export default new Router({
       name: 'custom',
       component: Custom,
     },
+    {
+      // path: Custom
+      path: '/customIndicatorAnimate',
+      name: 'customIndicatorAnimate',
+      component: CustomIndicatorAnimate,
+    },
+    // CustomIndicatorAnimate
     {
       path: '/multi-instance',
       name: 'multi-instance',

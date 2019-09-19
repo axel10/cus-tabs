@@ -36,7 +36,6 @@
 }
 .__cus-tabs .__cus-tab-bar .__cus-tabs-wrap .__cus-tabs-items-wrap .__cus-tab-bar-item {
   position: relative;
-  flex: 1;
   height: 100%;
   display: inline-flex;
   align-items: center;
