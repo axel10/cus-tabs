@@ -22,7 +22,7 @@
 }
 .__cus-tabs .__cus-tab-bar .__cus-tabs-wrap > .__cus-tab-indicator {
   height: 3px;
-  background-color: deepskyblue;
+  background-color: #409eff;
   transition: all 0.3s;
   position: absolute;
   left: 0;
@@ -42,6 +42,12 @@
   padding: 0 0.8rem;
   text-align: center;
   justify-content: center;
+}
+.__cus-tabs .__cus-tab-bar .__cus-tabs-wrap .__cus-tabs-items-wrap .__cus-tab-bar-item.inactive {
+  color: #333;
+}
+.__cus-tabs .__cus-tab-bar .__cus-tabs-wrap .__cus-tabs-items-wrap .__cus-tab-bar-item.active {
+  color: #409eff;
 }
 .__cus-tabs .__cus-tab-bar ::-webkit-scrollbar {
   display: none;
