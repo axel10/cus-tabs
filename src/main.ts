@@ -2,12 +2,12 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 import store from './store';
-import CusTabs from '@/components/cus-tabs';
 
-import './components/cus-tabs/style.less';
+import './components/vue-cus-tabs/index.less';
+import { installCusTabs } from '@/components/vue-cus-tabs';
 
 Vue.config.productionTip = false;
-Vue.use(CusTabs);
+Vue.use(installCusTabs);
 
 new Vue({
   router,
