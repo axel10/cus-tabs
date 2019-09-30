@@ -41,8 +41,9 @@ template:
 ```
 script:
 ```typescript
-  import { TabController,CusTabs } from 'cus-tabs';
+  import { TabController,CusTabs } from 'vue-cus-tabs';
   import Vue from 'vue'
+  import 'vue-cus-tabs/style/index.css'
  
   Vue.use(CusTabs);
 

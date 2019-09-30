@@ -1,7 +1,6 @@
 {
   "name": "vue-cus-tabs",
   "version": "0.1.0",
-  "private": true,
   "description": "customizable vue tab components",
   "bugs": {
     "url": "https://github.com/axel10/cus-tabs/issues"
@@ -11,12 +10,13 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
-    "compile": "babel src/components/cus-tabs --extensions \".ts,.tsx\"  --source-maps --out-dir output/es5",
+    "compile": "babel src/components/vue-cus-tabs --extensions \".ts,.tsx\"  --source-maps --out-dir output/es5",
     "pack": "webpack",
     "export": "node ./scripts/export.js"
   },
-  "main": "es5/cus-tabs.js",
-  "module": "es5/cus-tabs.js",
+  "main": "es5/index.js",
+  "module": "es5/index.js",
+  "types": "src/types.d.ts",
   "peerDependencies": {
     "vue": "^2.6.0"
   },

@@ -12,12 +12,10 @@ export interface TabControllerOptions<T> {
   touchEndTransitionTime?: number;
 }
 
-/*export enum IndicatorType {
-  block = 'block', underline = 'underline',
-}*/
-
 export interface IndicatorOptions {
   backgroundColor?: string;
   height?: string;
   width?: string;
 }
+
+export * from './index';
