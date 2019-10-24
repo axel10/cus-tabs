@@ -10,6 +10,8 @@ export interface TabControllerOptions<T> {
   indicatorOptions?: IndicatorOptions;
   onScrollEnd?: (i: number) => void;
   touchEndTransitionTime?: number;
+  activeColor?: string;
+  inactiveColor?: string
 }
 
 export interface IndicatorOptions {

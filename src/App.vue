@@ -5,11 +5,11 @@
 </template>
 
 <style lang="scss">
+
 #app {
 
 }
 #nav {
-  padding: 30px;
   a {
     font-weight: bold;
     color: #2c3e50;
@@ -20,9 +20,9 @@
 }
 
   html,body,#app{
-    margin: 0;
     width: 100%;
     height: 100%;
+    margin: 0;
   }
   #app{
 

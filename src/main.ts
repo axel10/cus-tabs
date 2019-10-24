@@ -5,9 +5,11 @@ import store from './store';
 
 import './components/vue-cus-tabs/index.less';
 import { installCusTabs } from '@/components/vue-cus-tabs';
+import VideoItem from '@/components/video-item/index.vue';
 
 Vue.config.productionTip = false;
 Vue.use(installCusTabs);
+Vue.component('video-item', VideoItem)
 
 new Vue({
   router,
