@@ -24,10 +24,10 @@ const outputEs5Dir = path.resolve(outputDir, 'es5');
 const outputSrcDir = path.resolve(outputDir, 'src');
 const outputStyleDir = path.resolve(outputDir, 'style');
 removeDir(outputDir);
-if (!fs.existsSync(outputEs5Dir)) fs.mkdirSync(outputEs5Dir, { recursive: true });
-if (!fs.existsSync(outputSrcDir)) fs.mkdirSync(outputSrcDir, { recursive: true });
-// if (!fs.existsSync(outputDistDir)) fs.mkdirSync(outputDistDir, { recursive: true });
-if (!fs.existsSync(outputStyleDir)) fs.mkdirSync(outputStyleDir, { recursive: true });
+fs.mkdirSync(outputDir, { recursive: true });
+fs.mkdirSync(outputEs5Dir, { recursive: true });
+fs.mkdirSync(outputSrcDir, { recursive: true });
+fs.mkdirSync(outputStyleDir, { recursive: true });
 
 // execSync('npm run pack');
 exec('npm run compile', (e) => {
